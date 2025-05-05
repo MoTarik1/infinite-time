@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عربة التسوق - انفنــتي تايم</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">انفنــتي تايم</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="products.html">المجموعات</a></li>
+            <li><a href="about.html">عن الشركة</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- محتوى الصفحة -->
+    <section class="cart-section">
+        <div class="container">
+            <h1>عربة التسوق</h1>
+            
+            <div class="cart-container">
+                <div class="cart-items" id="cartItems">
+                    <!-- سيتم ملؤها بالجافاسكريبت -->
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>عربة التسوق فارغة</p>
+                        <a href="products.html" class="btn">تصفح المنتجات</a>
+                    </div>
+                </div>
+                <div class="payment-methods">
+                    <h3>وسائل الدفع</h3>
+                    <div class="payment-icons">
+                    <img src="../assets/images/Visa.png" alt="Visa">
+                    <img src="../assets/images/Mastercard.png" alt="Mastercard">
+                    <img src="../assets/images/فوري.png" alt="فوري">
+                </div>
+
+                <div class="shipping-options">
+                    <h3>شركات التوصيل</h3>
+                    <select>
+                        <option>أمان اكسبريس</option>
+                        <option>ارامكس</option>
+                        <option>ناقل</option>
+                    </select>
+                </div>
+
+                <div class="cart-summary">
+                    <h2>ملخص الطلب</h2>
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>عدد المنتجات</span>
+                            <span id="itemsCount">0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>المجموع الجزئي</span>
+                            <span id="subtotal">0 ر.س</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>الشحن</span>
+                            <span id="shipping">0 ر.س</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>المجموع الكلي</span>
+                            <span id="total">0 ر.س</span>
+                        </div>
+                    </div>
+                    <button id="checkoutBtn" class="btn checkout-btn" disabled>إتمام الشراء</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>انفنــتي تايم</h3>
+                <p>متخصصون في تقديم أجود أنواع الساعات الفاخرة منذ 1995</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المجموعات</a></li>
+                    <li><a href="about.html">عن الشركة</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                <p><i class="fas fa-envelope"></i> info@infinitytime.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 انفنــتي تايم. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

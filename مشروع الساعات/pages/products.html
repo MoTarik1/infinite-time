@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجموعاتنا - انفنــتي تايم</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">انفنــتي تايم</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="products.html">المجموعات</a></li>
+            <li><a href="about.html">عن الشركة</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- قسم تصفية المنتجات -->
+    <section class="product-filter">
+        <div class="container">
+            <div class="filter-header">
+                <h2>مجموعاتنا الفاخرة</h2>
+                <button id="toggle-filters" class="btn filter-btn">
+                    <i class="fas fa-filter"></i> تصفية المنتجات
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قائمة التصفية المنبثقة -->
+    <div class="filter-overlay" id="filter-overlay"></div>
+    <div class="filter-options" id="filter-options">
+        <div class="filter-options-header">
+            <h3>خيارات التصفية</h3>
+            <button id="close-filters" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <!-- تصفية حسب الفئة -->
+        <div class="filter-group">
+            <h3>الفئة</h3>
+            <div class="filter-items">
+                <label>
+                    <input type="checkbox" name="category" value="men" checked>
+                    <span>ساعات رجالية</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="women" checked>
+                    <span>ساعات نسائية</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="kids" checked>
+                    <span>ساعات أطفال</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="daily" checked>
+                    <span>استخدام يومي</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="events" checked>
+                    <span>ساعات المناسبات</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="sports" checked>
+                    <span>ساعات رياضية</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- تصفية حسب السعر -->
+        <div class="filter-group">
+            <h3>نطاق السعر</h3>
+            <div class="price-range">
+                <input type="range" id="price-slider" min="0" max="10000" step="500" value="10000">
+                <div class="price-values">
+                    <span id="min-price">0 ر.س</span>
+                    <span id="max-price">10000 ر.س</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- تصفية حسب الميزات -->
+        <div class="filter-group">
+            <h3>ميزات خاصة</h3>
+            <div class="filter-items">
+                <label>
+                    <input type="checkbox" name="feature" value="waterproof">
+                    <span>مقاومة للماء</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="feature" value="leather">
+                    <span>حزام جلد طبيعي</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="feature" value="automatic">
+                    <span>حركة أوتوماتيكية</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="feature" value="chronograph">
+                    <span>كرونوغراف</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- تصفية حسب الماركة -->
+        <div class="filter-group">
+            <h3>العلامة التجارية</h3>
+            <div class="filter-items">
+                <label>
+                    <input type="checkbox" name="brand" value="infinity" checked>
+                    <span>انفنــتي</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="brand" value="luxury" checked>
+                    <span>لوكسري</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="brand" value="prestige" checked>
+                    <span>بريستيج</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="brand" value="elite" checked>
+                    <span>إيليت</span>
+                </label>
+            </div>
+        </div>
+
+        <button id="reset-filters" class="btn btn-outline">إعادة التعيين</button>
+    </div>
+
+    <!-- قسم عرض المنتجات -->
+    <section class="products">
+        <div class="container">
+            <div class="product-grid" id="all-products">
+                <!-- سيتم ملؤها بالجافاسكريبت -->
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر الموقع -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>انفنــتي تايم</h3>
+                <p>متخصصون في تقديم أجود أنواع الساعات الفاخرة منذ 1995</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المجموعات</a></li>
+                    <li><a href="about.html">عن الشركة</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                <p><i class="fas fa-envelope"></i> info@infinitytime.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 انفنــتي تايم. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/products.js"></script>
+    <script src="../assets/js/filters.js"></script>
+</body>
+</html>

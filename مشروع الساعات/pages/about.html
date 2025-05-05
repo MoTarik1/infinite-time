@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن الشركة - انفنــتي تايم</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .about-hero-simple {
+            background: linear-gradient(120deg, #f7f7f9 60%, #fff 100%);
+            padding: 4rem 0 2rem 0;
+            text-align: center;
+        }
+        .about-hero-simple h1 {
+            font-size: 2.7rem;
+            color: #222;
+            margin-bottom: 1rem;
+        }
+        .about-hero-simple p {
+            color: #888;
+            font-size: 1.15rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .about-main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: center;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(60,60,60,0.07);
+            margin: 2rem auto;
+            max-width: 900px;
+            padding: 2.5rem 2rem;
+        }
+        .about-main > div {
+            flex: 1 1 300px;
+            min-width: 260px;
+        }
+        .about-main h2 {
+            font-size: 1.3rem;
+            color: #d4af37;
+            margin-bottom: 0.7rem;
+        }
+        .about-main p {
+            color: #555;
+            font-size: 1.05rem;
+        }
+        .about-features {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin: 2.5rem 0 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        .about-feature {
+            background: #faf7ed;
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(212,175,55,0.07);
+            min-width: 140px;
+        }
+        .about-feature i {
+            color: #d4af37;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .about-feature span {
+            color: #333;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+        .about-team {
+            text-align: center;
+            margin: 2.5rem 0 1.5rem 0;
+        }
+        .about-team h2 {
+            color: #222;
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+        }
+        .team-list {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(60,60,60,0.07);
+            padding: 1.2rem 1.5rem;
+            min-width: 140px;
+        }
+        .team-member img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.7rem;
+            border: 2px solid #d4af37;
+        }
+        .team-member h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.2rem;
+            color: #333;
+        }
+        .team-member p {
+            color: #888;
+            font-size: 0.97rem;
+        }
+        @media (max-width: 700px) {
+            .about-main { flex-direction: column; padding: 1.2rem 0.5rem; }
+            .about-features, .team-list { gap: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">انفنــتي تايم</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="products.html">المجموعات</a></li>
+            <li><a href="about.html">عن الشركة</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="about-hero-simple">
+        <h1>من نحن؟</h1>
+        <p>انفنــتي تايم علامة سعودية متخصصة في تقديم أجود أنواع الساعات الفاخرة منذ 1995. نؤمن أن الساعة ليست مجرد أداة لمعرفة الوقت، بل هي قطعة فنية تعبر عن شخصيتك وترافقك في كل لحظة.</p>
+    </section>
+
+    <section class="about-main">
+        <div>
+            <h2>رؤيتنا</h2>
+            <p>أن نكون الوجهة الأولى لعشاق الساعات الفاخرة في المنطقة، من خلال تقديم تشكيلة حصرية من أفضل الماركات العالمية مع الحفاظ على هويتنا العربية الأصيلة.</p>
+        </div>
+        <div>
+            <h2>لماذا نحن؟</h2>
+            <p>نقدم ضماناً حقيقياً، خدمة عملاء مميزة، وشحن سريع لجميع أنحاء المملكة. جميع منتجاتنا أصلية 100% مع شهادات ضمان.</p>
+        </div>
+    </section>
+
+    <div class="about-features">
+        <div class="about-feature"><i class="fas fa-award"></i><span>25+ سنة خبرة</span></div>
+        <div class="about-feature"><i class="fas fa-shield-alt"></i><span>ضمان حقيقي</span></div>
+        <div class="about-feature"><i class="fas fa-headset"></i><span>دعم 24/7</span></div>
+        <div class="about-feature"><i class="fas fa-shipping-fast"></i><span>شحن سريع</span></div>
+        <div class="about-feature"><i class="fas fa-certificate"></i><span>منتجات أصلية</span></div>
+    </div>
+
+    <div class="about-team">
+        <h2>فريق انفنــتي تايم</h2>
+        <div class="team-list">
+            <div class="team-member">
+                <img src="../assets/images/profile1.jpeg" alt="زين محمد">
+                <h3>زين محمد</h3>
+                <p>المؤسس والرئيس التنفيذي</p>
+            </div>
+            <div class="team-member">
+                <img src="../assets/images/profile2.jpeg" alt="دانيل أحمد">
+                <h3>دانيل أحمد</h3>
+                <p>مدير العمليات</p>
+            </div>
+            <div class="team-member">
+                <img src="../assets/images/profile3.jpeg" alt="سارة الخالد">
+                <h3>سارة الخالد</h3>
+                <p>مديرة خدمة العملاء</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>انفنــتي تايم</h3>
+                <p>متخصصون في تقديم أجود أنواع الساعات الفاخرة منذ 1995</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المجموعات</a></li>
+                    <li><a href="about.html">عن الشركة</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                <p><i class="fas fa-envelope"></i> info@infinitytime.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 انفنــتي تايم. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
